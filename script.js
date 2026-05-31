@@ -4,10 +4,19 @@ const navLinks = document.getElementById('navLinks');
 const typingText = document.getElementById('typingText');
 const cursorGlow = document.querySelector('.cursor-glow');
 
-const savedTheme = localStorage.getItem('theme');
+let savedTheme = localStorage.getItem('theme');
+
+if (!savedTheme) {
+  savedTheme = 'dark';
+  localStorage.setItem('theme', 'dark');
+}
+
 if (savedTheme === 'dark') {
   document.body.classList.add('dark');
   themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i><span>Light</span>';
+} else {
+  document.body.classList.remove('dark');
+  themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i><span>Dark</span>';
 }
 
 themeToggle.addEventListener('click', () => {
