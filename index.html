@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ehsan Ullah | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="page-bg">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo"><span>E</span>hsan Ullah</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+         <li><a href="resume.pdf" download>Resume</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fa-solid fa-moon"></i>
+        <span>Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Computer Science Student • Frontend Developer • Flutter Learner</p>
+        <h1>Muhammad <span>Ehsan Ullah</span></h1>
+        <h2>I build <span id="typingText"></span></h2>
+        <p class="hero-text">
+          A passionate BS Computer Science student focused on modern web development, problem solving,
+          clean UI design, and building internship-ready real-world projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+           <a href="resume.pdf" download class="btn resume-btn">
+      <i class="fa-solid fa-file-arrow-down"></i>
+      Resume
+  </a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>Code</strong><span>Problem Solver</span></div>
+          <div><strong>Web</strong><span>Frontend Developer</span></div>
+          <div><strong>Flutter</strong><span>Learner</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="profile-panel">
+          <div class="profile-frame">
+            <div class="profile-placeholder">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+          </div>
+          <div class="profile-info">
+            <h3>Muhammad Ehsan Ullah</h3>
+            <p>Software Engineering Intern Candidate</p>
+          </div>
+          <div class="code-card">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <code>const goal = "Build better software";</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p>About Me</p>
+        <h2>Future-focused CS student with a practical mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Who I Am</h3>
+          <p>
+            I am Muhammad Ehsan Ullah, a Computer Science student at UET Taxila. I enjoy learning by building projects,
+            improving user interfaces, solving programming problems, and understanding how professional software is made.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <h3>My Direction</h3>
+          <p>
+            My current focus is frontend development, Flutter app development, GitHub portfolio building, and strengthening
+            my core CS concepts like OOP, DBMS, DSA, and problem solving.
+          </p>
+        </div>
+        <div class="about-card highlight reveal">
+          <h3>Developer Mindset</h3>
+          <p>
+            I believe in learning through practical work, writing clean and understandable code,
+            improving step by step, and building projects that solve real problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p>Technical Skills</p>
+        <h2>Skills I am learning and improving.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Semantic structure and clean layouts.</p></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3><p>Responsive design, animations, modern UI.</p></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Interactivity, DOM, logic, dynamic effects.</p></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-code"></i><h3>C++</h3><p>OOP, DSA basics, console projects.</p></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Logic building and beginner automation.</p></div>
+        <div class="skill-card reveal"><i class="fa-solid fa-database"></i><h3>SQL / DBMS</h3><p>Queries, tables, relationships, triggers.</p></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-flutter"></i><h3>Flutter</h3><p>Cross-platform mobile app development.</p></div>
+        <div class="skill-card reveal"><i class="fa-brands fa-github"></i><h3>GitHub</h3><p>Version control and project showcasing.</p></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p>Featured Projects</p>
+        <h2>Projects that show my learning journey.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>01</span><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Student Management System</h3>
+            <p>A C++ OOP-based academic system with admin/student modes, attendance tracking, fee calculation, file handling, and structured menu operations.</p>
+          </div>
+          <div class="tags"><span>C++</span><span>OOP</span><span>File Handling</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>02</span><i class="fa-solid fa-globe"></i></div>
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio website with animated sections, dark/light mode, modern cards, smooth UI, and clean frontend structure.</p>
+          </div>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>03</span><i class="fa-solid fa-brain"></i></div>
+            <h3>Logical Reasoning Assistant</h3>
+            <p>A Discrete Structures project based on propositional logic, set operations, predicate logic, and relation property analysis.</p>
+          </div>
+          <div class="tags"><span>Logic</span><span>Sets</span><span>CS Theory</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>04</span><i class="fa-solid fa-shirt"></i></div>
+            <h3>MomentumX</h3>
+            <p>A modern fitness apparel website designed with HTML and CSS, featuring clean product sections, responsive layout, and professional styling.</p>
+          </div>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Responsive</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>05</span><i class="fa-solid fa-car"></i></div>
+            <h3>Car Parking System</h3>
+            <p>A C++ parking management system using OOP and DSA concepts to manage vehicle records, parking slots, and basic parking operations.</p>
+          </div>
+          <div class="tags"><span>C++</span><span>OOP</span><span>DSA</span></div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <div class="project-top"><span>06</span><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>Grocery Store Management System</h3>
+            <p>A grocery store project built using HTML, CSS, and MySQL concepts for managing products, inventory, and basic customer data.</p>
+          </div>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>MySQL</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p>What I Can Do</p>
+        <h2>Small services and areas I am building confidence in.</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><i class="fa-solid fa-laptop-code"></i><h3>Frontend Websites</h3><p>Clean responsive websites using HTML, CSS, and JavaScript.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-mobile-screen"></i><h3>Flutter Apps</h3><p>Beginner-friendly mobile UI and cross-platform app learning.</p></div>
+        <div class="service-card reveal"><i class="fa-solid fa-code-branch"></i><h3>Programming Logic</h3><p>Basic problem solving, C++ programs, OOP concepts, and DSA-based logic building.</p></div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section-heading reveal">
+        <p>Learning Journey</p>
+        <h2>My roadmap toward becoming internship-ready.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><span></span><h3>Core CS Foundation</h3><p>OOP, DBMS, DSA, Discrete Structures, and problem solving.</p></div>
+        <div class="timeline-item reveal"><span></span><h3>Frontend Development</h3><p>HTML, CSS, JavaScript, responsive layouts, and animations.</p></div>
+        <div class="timeline-item reveal"><span></span><h3>Development Workflow</h3><p>Git, GitHub, VS Code, clean project structure, and version control practices.</p></div>
+        <div class="timeline-item reveal"><span></span><h3>Next Target</h3><p>Flutter development, React fundamentals, stronger project building, and real-world software practice.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect and build something useful.</h2>
+          <p>Open to internships, learning opportunities, collaborations, and beginner-friendly development work.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:ehxanullah01@gmail.com"><i class="fa-solid fa-envelope"></i> ehxanullah01@gmail.com</a>
+          <a href="https://github.com/ehsanullahop" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://fiverr.com/" target="_blank"><i class="fa-solid fa-briefcase"></i> Fiverr</a>
+          <a href="resume.pdf" download>
+          <i class="fa-solid fa-file-arrow-down"></i>
+             Download Resume
+</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Muhammad Ehsan Ullah. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
