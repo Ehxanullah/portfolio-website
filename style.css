@@ -1,4 +1,4 @@
-body.light {
+:root {
   --bg: #f8fbff;
   --surface: rgba(255, 255, 255, 0.78);
   --surface-strong: #ffffff;
@@ -11,7 +11,7 @@ body.light {
   --shadow-hover: 0 32px 90px rgba(37, 99, 235, 0.18);
 }
 
-:root {
+body.dark {
   --bg: #050816;
   --surface: rgba(15, 23, 42, 0.72);
   --surface-strong: #0f172a;
